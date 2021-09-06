@@ -1,30 +1,19 @@
 import './App.css';
+import AppHeader from './components/AppHeader';
+import DogItem from './components/DogItem';
+import DogPost from './components/DogPost';
 
 function App() {
   return (
-  <div className="App">
-    <header className="App-header">
-      <h4>Dog Breeds</h4>
-    </header>
+    <div className="App">
+      <AppHeader />
       <div className="App-grid">
-        <div className="App-box">
-          <img src="\pic\01Bulldog_L.jpg"/>
-          <h4>Bulldog</h4>
-        </div>
-        <div className="App-box">
-          <img src="\pic\02poodle_L.jpg"/>
-          <h4>Bulldog</h4>
-        </div>
-        <div className="App-box">
-          <img src="\pic\03german-shepherd_L.jpg"/>
-          <h4>Bulldog</h4>
-        </div>
-        <div className="App-box">
-          <img src="\pic\01Bulldog_L.jpg"/>
-          <h4>Bulldog</h4>
-        </div>
+        <DogItem />
+        <DogItem />
+        <DogItem />
+        <DogItem />
       </div>
-  </div>
+    </div>
   );
 }
 
