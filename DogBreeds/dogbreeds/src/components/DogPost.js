@@ -1,12 +1,14 @@
+import dogs from '../data/dog';
 import './DogPost.css';
 
-function DogPost (){
+function DogPost (props){
+    const {dog, onBgClick} = props;
     return(
-        <div className="Dog-post">
-            <div className="Dog-post-bg"/>
-            <div className="Dog-post-content">
-                <img src="\pic\01Bulldog_L.jpg"/>
-                <h4>Bulldog</h4>
+        <div className="dog-post">
+            <div className="dog-post-bg" onClick={onBgClick}/>
+            <div className="dog-post-content">
+                <img src={dog.fullUrl}/>
+                <h4>{dog.title}</h4>
             </div>
         </div>
     )

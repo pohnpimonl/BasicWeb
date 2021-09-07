@@ -1,10 +1,11 @@
 import ('./DogItem.css');
 
-function DogItem(){
+function DogItem(props){
+    const { dog, onDogClick } = props;
     return(
         <div className="Dog-item">
-            <img src="\pic\01Bulldog_S.jpg" />
-            <h4>Bulldog</h4>
+            <img src= {dog.thumbnailUrl} onClick={()=>{onDogClick(dog)}} />
+            <h4>{dog.title}</h4>
         </div>
     )
 }
