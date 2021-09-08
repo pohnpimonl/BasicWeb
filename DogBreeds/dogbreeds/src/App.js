@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './App.css';
 import AppHeader from './components/AppHeader';
+import AppSearch from './components/AppSearch';
 import DogItem from './components/DogItem';
 import DogPost from './components/DogPost';
 import dogs from './data/dog';
@@ -17,7 +18,9 @@ function App() {
     setselectedDog(null)
   }
 
-  const dogElements = dogs.map((dog, index) => {
+  const dogElements = dogs.filter((dog)=>{
+    return dog.title.includes(searchText)
+  }).map((dog, index) => {
     return < DogItem key={index} dog={dog} onDogClick={onDogOpenClick}/>;
   })
   
@@ -29,18 +32,14 @@ function App() {
   return (
     <div className="App">
       <AppHeader />
-      <div className="App-search">
-        <input
-             className="App-search-input"
-             type="text"
-             placeholder="Search Dog Breeds"
-             value={searchText}
-             onChange={(event) => {setsearchText(event.target.value)}}
-        />     
-      </div>
+      <section className="App-section">
+        <div className="App-container">
+        <AppSearch value={searchText} onValueChange={setsearchText}/>
       <div className="App-grid">
         {dogElements}
       </div>
+        </div>
+      </section>
       {dogPost}
     </div>
   );
