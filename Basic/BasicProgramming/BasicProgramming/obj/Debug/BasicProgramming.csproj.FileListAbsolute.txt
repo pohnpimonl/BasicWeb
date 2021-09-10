@@ -1,0 +1,7 @@
+D:\BasicWeb\Basic\BasicProgramming\BasicProgramming\bin\Debug\BasicProgramming.exe.config
+D:\BasicWeb\Basic\BasicProgramming\BasicProgramming\bin\Debug\BasicProgramming.exe
+D:\BasicWeb\Basic\BasicProgramming\BasicProgramming\bin\Debug\BasicProgramming.pdb
+D:\BasicWeb\Basic\BasicProgramming\BasicProgramming\obj\Debug\BasicProgramming.csproj.AssemblyReference.cache
+D:\BasicWeb\Basic\BasicProgramming\BasicProgramming\obj\Debug\BasicProgramming.csproj.CoreCompileInputs.cache
+D:\BasicWeb\Basic\BasicProgramming\BasicProgramming\obj\Debug\BasicProgramming.exe
+D:\BasicWeb\Basic\BasicProgramming\BasicProgramming\obj\Debug\BasicProgramming.pdb
