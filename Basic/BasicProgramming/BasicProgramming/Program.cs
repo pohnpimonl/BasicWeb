@@ -11,18 +11,14 @@ namespace BasicProgramming
 
         static void Main(string[] args)
         {
-            for(int i = 0; i < 6; i++)
-            {
-                for(int j =0; j<6;j++)
-                {
-                    if(i>=j)
-                    {
-                        Console.Write("*");
-                    }
-                }
-                Console.WriteLine();
-            }
-            
+            int a, b, max, min;
+            int.TryParse(System.Console.ReadLine(), out a);
+            int.TryParse(System.Console.ReadLine(), out b);
+            if (a > b) { max = a; min = b; }
+            else max = b; min = a;
+            System.Console.WriteLine("MAX : {0}", max);
+            System.Console.WriteLine("MIN : {0}", min);
+
             Console.ReadLine();
         }
     }
